@@ -1,0 +1,65 @@
+* {
+           font-family: 'Fredoka', sans-serif;
+           user-select: none;
+           -webkit-user-select: none;
+           touch-action: none;
+       }
+
+
+       body {
+           background-color: #030014;
+           margin: 0;
+           overflow: hidden;
+       }
+
+
+       #canvas-container {
+           width: 100vw;
+           height: 100vh;
+           position: absolute;
+           top: 0;
+           left: 0;
+           z-index: 1;
+       }
+
+
+       /* VR Button Override Styling */
+       #VRButton {
+           position: absolute !important;
+           bottom: 24px !important;
+           left: 50% !important;
+           transform: translateX(-50%) !important;
+           background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%) !important;
+           border: 2px solid #ffffff66 !important;
+           border-radius: 16px !important;
+           color: #ffffff !important;
+           font-weight: 800 !important;
+           font-size: 16px !important;
+           padding: 14px 32px !important;
+           box-shadow: 0 0 25px rgba(236, 72, 153, 0.7) !important;
+           transition: all 0.3s ease !important;
+           z-index: 30 !important;
+           letter-spacing: 1px !important;
+       }
+
+
+       #VRButton:hover {
+           box-shadow: 0 0 40px rgba(236, 72, 153, 1) !important;
+           transform: translateX(-50%) scale(1.05) !important;
+       }
+
+
+       /* Glassmorphism overlays */
+       .glass-card {
+           background: rgba(15, 10, 30, 0.85);
+           backdrop-filter: blur(16px);
+           -webkit-backdrop-filter: blur(16px);
+           border: 2px solid rgba(139, 92, 246, 0.4);
+       }
+
+
+       /* Flash Red overlay on damage */
+       #damage-flash {
+           pointer-events: none;
+           transition: opacity 0.15s ease-out;
+       }
